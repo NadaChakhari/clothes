@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">veiled clothes</string>
+
+    <!--page d'accueil-->
+    <string name="home_page_title">A découvrire </string>
+    <string name="home_page_last_clothes_section">dernières vêtement </string>
+
+    <!--page de collection-->
+    <string name="collection_page_title">Ma Collection </string>
+
+    <!--page d'ajout de vêtements-->
+    <string name="add_clothes_page_title">Ajout vêtement</string>
+    <string name="add_clothes_page_upload_button">charger une image</string>
+    <string name="add_clothes_page_name_input">@string/item_clothes_name </string>
+    <string name="add_clothes_page_description_input">@string/item_clothes_description </string>
+    <string name="add_clothes_page_price_input">prix du vêtement</string>
+    <string-array name="add_clothes_page_state_input">
+        <item> état : neuf avec étiquette </item>
+        <item> état : neuf sans étiquette </item>
+        <item> état : trés bon état </item>
+        <item> état : bon état </item>
+        <item> état : satisfant </item>
+    </string-array>
+    <string name="add_clothes_page_confirm_button">confirmer</string>
+
+    <!--fenetre popup de détails-->
+    <string name="popup_vetement_name">vêtement name</string>
+    <string name="popup_vetement_description_title">description</string>
+    <string name="popup_vetement_description_suttitle">Petite description</string>
+    <string name="popup_vetement_price"> Prix </string>
+    <string name="popup_vetement_state_title"> Etat </string>
+    <string name="popup_vetement_state_suttitle">neuf avec étiquette</string>
+
+
+    <!--vêtement_costumise-->
+    <string name="item_clothes_name">nom de vêtement  </string>
+    <string name="item_clothes_description">description de vêtement  </string>
+</resources>
