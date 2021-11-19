@@ -8,13 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.nada.clothes.ClotheModel
-import com.nada.clothes.ClotheRepository
-import com.nada.clothes.MainActivity
-import com.nada.clothes.R
+import com.nada.clothes.*
 
 class clothesAdapter(
-    private val context: MainActivity,
+    val context: MainActivity,
     private val clotheList: List<ClotheModel>,
     private  val layoutId: Int) :RecyclerView.Adapter<clothesAdapter.ViewHolder>(){
 
@@ -66,6 +63,12 @@ class clothesAdapter(
             currentClothe.liked = !currentClothe.liked
             //mettre à jour l'objet clothe
             repo.updateClothe(currentClothe)
+        }
+
+        //interaction lors du clic sur une oiece de vetement
+        holder.itemView.setOnClickListener{
+            //afficher la popup
+            ClothePopup(this).show()
         }
     }
 

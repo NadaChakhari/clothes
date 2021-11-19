@@ -26,10 +26,11 @@
     <!--fenetre popup de détails-->
     <string name="popup_vetement_name">vêtement name</string>
     <string name="popup_vetement_description_title">description</string>
-    <string name="popup_vetement_description_suttitle">Petite description</string>
-    <string name="popup_vetement_price"> Prix </string>
+    <string name="popup_vetement_description_subtitle">Petite description</string>
+    <string name="popup_vetement_price_title"> Prix </string>
+    <string name="popup_vetement_price_value"> Prix </string>
     <string name="popup_vetement_state_title"> Etat </string>
-    <string name="popup_vetement_state_suttitle">neuf avec étiquette</string>
+    <string name="popup_vetement_state_subtitle">neuf avec étiquette</string>
 
 
     <!--vêtement_costumise-->
