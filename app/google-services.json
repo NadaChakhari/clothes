@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899059806438",
+    "project_id": "veild-clothes",
+    "storage_bucket": "veild-clothes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899059806438:android:f011969822d571323bcb27",
+        "android_client_info": {
+          "package_name": "com.nada.clothes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899059806438-771dvmfneg9i4kqbk6cblllfisjdmp2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAtyXuL-gQQPLlahEOZFga3YhUsai0weQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899059806438-771dvmfneg9i4kqbk6cblllfisjdmp2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

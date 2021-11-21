@@ -65,10 +65,10 @@ class clothesAdapter(
             repo.updateClothe(currentClothe)
         }
 
-        //interaction lors du clic sur une oiece de vetement
+       //interaction lors du clic sur une piece de vetements
         holder.itemView.setOnClickListener{
             //afficher la popup
-            ClothePopup(this).show()
+            ClothePopup(currentClothe, this).show()
         }
     }
 

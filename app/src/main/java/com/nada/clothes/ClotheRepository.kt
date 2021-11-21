@@ -10,7 +10,7 @@ import com.nada.clothes.ClotheRepository.SingleTon.dataBaseRef
 class ClotheRepository {
     object SingleTon{
         //se connecter à la  reférence clothes
-        var dataBaseRef = FirebaseDatabase.getInstance().getReference("clothes")
+        var dataBaseRef = FirebaseDatabase.getInstance("https://veild-clothes-default-rtdb.firebaseio.com/").getReference("clothes")
 
         //créer une liste qui va convertir nos clothes
         val clotheList = arrayListOf<ClotheModel>()
@@ -43,4 +43,7 @@ class ClotheRepository {
     }
     //mettre à jour l'objet clothe en BDD
     fun  updateClothe(clothe: ClotheModel) = dataBaseRef.child(clothe.id).setValue(clothe)
+
+    //supprimer une vetement de la base
+    fun deleteClothe(clothe: ClotheModel) = dataBaseRef.child(clothe.id).removeValue()
 }
