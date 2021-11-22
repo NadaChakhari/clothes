@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_clothes_page_upload_button"
+            android:background="@color/purple_500"
+            style="@style/TitleTextStyle"
+            android:textColor="@color/white"
+            android:padding="@dimen/item_margin"/>
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image2"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/add_clothes_page_name_input"
+        style="@style/TitleTextStyle"
+        android:paddingLeft="@dimen/item_margin"
+        android:layout_marginTop="@dimen/default_margin"/>
+
+    <EditText
+        android:id="@+id/description_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/add_clothes_page_description_input"
+        style="@style/TitleTextStyle"
+        android:paddingLeft="@dimen/item_margin"
+        android:layout_marginTop="@dimen/default_margin"/>
+
+    <EditText
+        android:id="@+id/price_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="@string/add_clothes_page_price_input"
+        style="@style/TitleTextStyle"
+        android:paddingLeft="@dimen/item_margin"
+        android:layout_marginTop="@dimen/default_margin"/>
+
+    <Spinner
+        android:id="@+id/state_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:entries="@array/add_clothes_page_state_spinner_input"
+        android:paddingLeft="@dimen/item_margin"
+        android:layout_marginTop="@dimen/default_margin"/>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/purple_500"
+        android:text="@string/add_clothes_page_confirm_button"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_marginTop="@dimen/default_margin"
+        />
+
+</LinearLayout>

@@ -14,12 +14,12 @@
     <string name="add_clothes_page_name_input">@string/item_clothes_name </string>
     <string name="add_clothes_page_description_input">@string/item_clothes_description </string>
     <string name="add_clothes_page_price_input">prix du vêtement</string>
-    <string-array name="add_clothes_page_state_input">
-        <item> état : neuf avec étiquette </item>
-        <item> état : neuf sans étiquette </item>
-        <item> état : trés bon état </item>
-        <item> état : bon état </item>
-        <item> état : satisfant </item>
+    <string-array name="add_clothes_page_state_spinner_input">
+        <item> Etat : neuf avec étiquette </item>
+        <item> Etat : neuf sans étiquette </item>
+        <item> Etat : trés bon état </item>
+        <item> Etat : bon état </item>
+        <item> Etat : satisfant </item>
     </string-array>
     <string name="add_clothes_page_confirm_button">confirmer</string>
 

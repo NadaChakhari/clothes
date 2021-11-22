@@ -2,7 +2,7 @@ package com.nada.clothes
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.nada.clothes.fragments.homeFragment
+import com.nada.clothes.fragments.AddClotheFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         repo.updateData{
             //injecter le fragment dans notre boite (fragment_containe)
             val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container, homeFragment(this))
+            transaction.replace(R.id.fragment_container, AddClotheFragment(this))
             transaction.addToBackStack(null)
             transaction.commit()
         }
