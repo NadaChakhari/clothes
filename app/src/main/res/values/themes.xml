@@ -35,4 +35,14 @@
     </style>
     <color name="darkGray">#272525</color>
     <color name="lightGray">#686565</color>
+
+    <!--crrer un style pour le bottom navigation view-->
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--personnaliser la bare de navigation -->
+    <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>

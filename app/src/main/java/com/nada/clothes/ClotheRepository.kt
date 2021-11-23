@@ -11,8 +11,8 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.UploadTask
 import com.nada.clothes.ClotheRepository.SingleTon.clotheList
 import com.nada.clothes.ClotheRepository.SingleTon.dataBaseRef
+import com.nada.clothes.ClotheRepository.SingleTon.downloadUri
 import com.nada.clothes.ClotheRepository.SingleTon.storageReference
-import java.net.URI
 import java.util.*
 
 class ClotheRepository {
@@ -21,13 +21,16 @@ class ClotheRepository {
         private val BUCKET_URL: String = "gs://veild-clothes.appspot.com"
 
         //connecter a notre espace de stockage
-        val storageReference =FirebaseStorage.getInstance("gs://veild-clothes.appspot.com").getReferenceFromUrl(BUCKET_URL)
+        val storageReference =FirebaseStorage.getInstance().getReferenceFromUrl(BUCKET_URL)
 
         //se connecter à la  reférence clothes
         var dataBaseRef = FirebaseDatabase.getInstance("https://veild-clothes-default-rtdb.firebaseio.com/").getReference("clothes")
 
         //créer une liste qui va convertir nos clothes
         val clotheList = arrayListOf<ClotheModel>()
+
+        //contenir le lien de l'image courante
+        var downloadUri: Uri? = null
     }
 
     fun updateData (callback: ()-> Unit){
@@ -56,7 +59,7 @@ class ClotheRepository {
         })
     }
     //creer une fonction pour envoyer des fichiers sur le storage
-    fun uploadImage(file: URI){
+    fun uploadImage(file: Uri, callback: () -> Unit){
         //verifier que ce fichier n'est pas null
         if(file != null){
             val fileName = UUID.randomUUID().toString() + ".jpg"
@@ -74,7 +77,8 @@ class ClotheRepository {
                 //verifier si tout a bien fonctionner
                 if(task.isSuccessful){
                     //recupper l'image
-                    val downloadURI = task.result
+                    downloadUri = task.result
+                    callback()
                 }
             }
 
@@ -85,6 +89,12 @@ class ClotheRepository {
     //mettre à jour l'objet clothe en BDD
     fun  updateClothe(clothe: ClotheModel) = dataBaseRef.child(clothe.id).setValue(clothe)
 
+    //inserer une nouvelle clothe en bdd
+    fun insertClothe(clothe: ClotheModel) = dataBaseRef.child(clothe.id).setValue(clothe)
+
     //supprimer une vetement de la base
     fun deleteClothe(clothe: ClotheModel) = dataBaseRef.child(clothe.id).removeValue()
+
 }
+
+

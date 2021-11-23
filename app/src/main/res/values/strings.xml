@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">veiled clothes</string>
+    
+    <string name="bottom_home_item"> Accueil</string>
+    <string name="bottom_collection_item">Collection </string>
+    <string name="bottom_add_clothe_item">Ajouter</string>
 
     <!--page d'accueil-->
     <string name="home_page_title">A découvrire </string>
