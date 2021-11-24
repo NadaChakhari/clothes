@@ -40,4 +40,9 @@
     <!--vêtement_costumise-->
     <string name="item_clothes_name">nom de vêtement  </string>
     <string name="item_clothes_description">description de vêtement  </string>
+    <string name="Bienvenue" />
+    <string name="Username" />
+    <string name="login">Login</string>
+    <string name="pass" />
+    <string name="create_new_account">Create new account</string>
 </resources>

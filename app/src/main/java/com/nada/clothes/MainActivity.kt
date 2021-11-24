@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.nada.clothes.fragments.AddClotheFragment
+import com.nada.clothes.fragments.CollectionFragment
 import com.nada.clothes.fragments.homeFragment
 
 class MainActivity : AppCompatActivity() {
@@ -15,20 +17,20 @@ class MainActivity : AppCompatActivity() {
         loadFragment(homeFragment(this), R.string.home_page_title)
 
         //importer le BottomNavigationView
-        val navigationView = findViewById<BottomNavigationItemView>(R.id.navigation_view)
-        navigationView.OnNavigationItemSelectedLostener {
+        val navigationView = findViewById<BottomNavigationView>(R.id.navigation_view)
+        navigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.home_page -> {
                     loadFragment(homeFragment(this), R.string.home_page_title)
-                    return@OnNavigationItemSelectedLostener true
+                    return@setOnNavigationItemSelectedListener true
                 }
                 R.id.collection_page -> {
-                    loadFragment(homeFragment(this), R.string.collection_page_title)
-                    return@OnNavigationItemSelectedLostener true
+                    loadFragment(CollectionFragment(this), R.string.collection_page_title)
+                    return@setOnNavigationItemSelectedListener true
                 }
                 R.id.add_clothe_page -> {
-                    loadFragment(homeFragment(this), R.string.add_clothes_page_title)
-                    return@OnNavigationItemSelectedLostener true
+                    loadFragment(AddClotheFragment(this), R.string.add_clothes_page_title)
+                    return@setOnNavigationItemSelectedListener true
                 }
                 else -> false
             }

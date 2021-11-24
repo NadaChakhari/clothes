@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/nadac/AndroidStudioProjects/clothes/app/src/main/res/drawable/bottom_nav_color.xml" value="0.3728205128205128" />
+        <entry key="..\:/Users/nadac/AndroidStudioProjects/clothes/app/src/main/res/layout/activity_create.xml" value="0.3625" />
+        <entry key="..\:/Users/nadac/AndroidStudioProjects/clothes/app/src/main/res/layout/activity_login.xml" value="0.3625" />
         <entry key="..\:/Users/nadac/AndroidStudioProjects/clothes/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Users/nadac/AndroidStudioProjects/clothes/app/src/main/res/layout/fragment_add_clothe.xml" value="0.3625" />
         <entry key="..\:/Users/nadac/AndroidStudioProjects/clothes/app/src/main/res/layout/fragment_collection.xml" value="0.3625" />

@@ -13,6 +13,6 @@
 
     <item
         android:id="@+id/add_clothe_page"
-        android:title="@string/bottom_home_item"
+        android:title="@string/bottom_add_clothe_item"
         android:icon="@drawable/ic_plus"/>
 </menu>
