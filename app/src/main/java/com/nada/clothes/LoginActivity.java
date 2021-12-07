@@ -92,12 +92,12 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.child("Users").hasChild(username)) {
+                if (dataSnapshot.hasChild(username)) {
 
 
                     Toast.makeText(LoginActivity.this, "Account with this " + username + " username exists.", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
-                    final String getpass = dataSnapshot.child("Users").child(username).child("password").getValue(String.class);
+                    final String getpass = dataSnapshot.child(username).child(password).getValue(String.class);
                     if (getpass.equals(password)) {
                         Toast.makeText(LoginActivity.this, "logged in Successfully...", Toast.LENGTH_SHORT).show();
                         loadingBar.dismiss();
@@ -111,7 +111,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                 } else {
-                    Toast.makeText(LoginActivity.this, "Account with this " + username + " email do not exists.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Account with this " + username + " username don't exists.", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                 }
 

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background=""
     android:scaleX="1.01"
-    tools:context=".CreateActivity">
+    >
 
 
     <ImageView
@@ -16,8 +14,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="61dp"
         android:src="@drawable/woman" />
 
     <EditText
@@ -27,8 +25,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="3dp"
         android:layout_marginRight="15dp"
         android:inputType="text"
         android:padding="20dp"
@@ -40,15 +38,15 @@
 
     <EditText
         android:id="@+id/register_email_input"
-        android:layout_width="263dp"
-        android:layout_height="76dp"
+        android:layout_width="262dp"
+        android:layout_height="56dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="46dp"
+        android:layout_marginStart="40dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginEnd="-2dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="469dp"
+        android:layout_marginBottom="407dp"
         android:layout_toEndOf="@+id/Email"
         android:inputType="textEmailAddress"
         android:padding="20dp"
@@ -59,14 +57,14 @@
 
     <EditText
         android:id="@+id/register_password_input"
-        android:layout_width="264dp"
-        android:layout_height="74dp"
+        android:layout_width="255dp"
+        android:layout_height="73dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginRight="15dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="308dp"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:padding="20dp"
@@ -86,11 +84,11 @@
         android:layout_marginEnd="138dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="139dp"
-        android:backgroundTint="#99ffffff"
+        android:backgroundTint="@color/purple_200"
         android:padding="20dp"
         android:text="create"
         android:textAllCaps="false"
-        android:textColor="#13497B"
+        android:textColor="@color/white"
         android:textSize="18sp" />
 
     <TextView
@@ -105,7 +103,7 @@
         android:layout_marginBottom="492dp"
         android:layout_toStartOf="@+id/register_username_input"
         android:text="Username"
-        android:textColor="#13497B"
+        android:textColor="@color/purple_200"
         android:textColorHint="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -119,7 +117,7 @@
         android:layout_marginStart="19dp"
         android:layout_marginBottom="401dp"
         android:text="Email"
-        android:textColor="#13497B"
+        android:textColor="@color/purple_200"
         android:textSize="23sp"
         android:textStyle="bold" />
 
@@ -135,7 +133,35 @@
         android:layout_marginBottom="311dp"
         android:layout_toStartOf="@+id/register_password_input"
         android:text="Password"
-        android:textColor="#13497B"
+        android:textColor="@color/purple_200"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_applogo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="125dp"
+        android:text="Veiled Clothes"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="-643dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="70dp"
+        android:text="You already have an account ?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
